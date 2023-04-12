@@ -1,3 +1,7 @@
+
+package org.example.Ticket;
+
+
 import java.util.Arrays;
 
 public class TicketManager {
@@ -10,6 +14,7 @@ public class TicketManager {
         this.repository = repository;
 
     }
+
 
     public void add(Ticket ticket) {
         repository.add(ticket);

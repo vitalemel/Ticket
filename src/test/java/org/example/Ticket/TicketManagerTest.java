@@ -1,8 +1,10 @@
+package org.example.Ticket;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class TicketManagerTest {
     @Test
@@ -16,16 +18,13 @@ public class TicketManagerTest {
         Ticket ticket5 = new Ticket(5, "MSK", "SPB", 250, 130);
         Ticket ticket6 = new Ticket(6, "NEW", "SPB", 600, 95);
         Ticket ticket7 = new Ticket(7, "MSK", "SPB", 150, 97);
-        manager.add(ticket1);
-        manager.add(ticket2);
-        manager.add(ticket3);
-        manager.add(ticket4);
-        manager.add(ticket5);
-        manager.add(ticket6);
-        manager.add(ticket7);
+        for (Ticket ticket : Arrays.asList(ticket1, ticket2, ticket3, ticket4, ticket5, ticket6, ticket7)) {
+            manager.add(ticket);
+        }
 
         Ticket[] expected = {ticket2, ticket7, ticket1, ticket5};
         Ticket[] actual = manager.findAll("MSK", "SPB");
-        assertArrayEquals(expected, actual);
+
+        Assertions.assertArrayEquals(expected, actual);
     }
 }

@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebd2a355-8f47-4d36-a866-14c8a444e878" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TicketManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TicketManager/TicketRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TicketManagerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="ebd2a355-8f47-4d36-a866-14c8a444e878" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Ticket/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TicketManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Ticket/TicketManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TicketManager/TicketRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TicketManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Ticket/TicketManagerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/сава 73/IdeaProjects/Ticket/src/main/java",
+    "last_directory_selection": "C:/Users/сава 73/IdeaProjects/Ticket/src/test/java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -67,7 +62,7 @@
       <recent name="TicketManager" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TicketManagerTest">
+  <component name="RunManager" selected="JUnit.TicketManagerTest.testSortTickets (1)">
     <configuration name="TicketManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Ticket" />
       <option name="PACKAGE_NAME" value="" />
@@ -103,6 +98,22 @@
       <option name="PACKAGE_NAME" value="TicketManager" />
       <option name="MAIN_CLASS_NAME" value="TicketManager.TicketManagerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketManagerTest.testSortTickets (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Ticket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.Ticket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.Ticket" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Ticket.TicketManagerTest" />
+      <option name="METHOD_NAME" value="testSortTickets" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,9 +130,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TicketManagerTest" />
+        <item itemvalue="JUnit.TicketManagerTest.testSortTickets (1)" />
         <item itemvalue="JUnit.TicketManagerTest.testSortTickets" />
-        <item itemvalue="JUnit.TicketManagerTest (1)" />
+        <item itemvalue="JUnit.TicketManagerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679835505192</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1680885350747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680885350747</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
