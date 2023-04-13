@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class TicketManager {
 
 
-    private TicketRepository repository;
+    private  TicketRepository repository;
 
 
     public TicketManager(TicketRepository repository) {
