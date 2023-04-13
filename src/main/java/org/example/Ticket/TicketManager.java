@@ -29,6 +29,7 @@ public class TicketManager {
                 for (int i = 0; i < result.length; i++) {
                     tmp[i] = result[i];
                 }
+                tmp[result.length] = ticket;
                 result = tmp;
             }
         }
