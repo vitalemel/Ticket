@@ -9,8 +9,11 @@ import java.util.Arrays;
 public class TicketManagerTest {
     @Test
     public void testSortTickets() {
-        TicketRepository repo = new TicketRepository();
-        TicketManager manager = new TicketManager(repo);
+        TicketRepository repo;
+        repo = new TicketRepository();
+        TicketManager manager;
+        TicketRepository repository = new TicketRepository();
+        manager = new TicketManager(repo);
         Ticket ticket1 = new Ticket(1, "MSK", "SPB", 200, 95);
         Ticket ticket2 = new Ticket(2, "MSK", "SPB", 100, 99);
         Ticket ticket3 = new Ticket(3, "MSK", "LA", 500, 300);

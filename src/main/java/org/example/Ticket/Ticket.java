@@ -2,6 +2,7 @@ package org.example.Ticket;
 
 public class Ticket implements Comparable<Ticket> {
 
+
     private int id;
     private String from;
     private String to;
@@ -46,4 +47,7 @@ public class Ticket implements Comparable<Ticket> {
         }
         return 0;
     }
+
+
 }
+

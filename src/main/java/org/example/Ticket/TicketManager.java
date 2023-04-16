@@ -1,20 +1,25 @@
-
 package org.example.Ticket;
 
 
 import java.util.Arrays;
+import java.util.regex.Pattern;
 
 public class TicketManager {
 
 
-    private  TicketRepository repository;
+    private TicketRepository repository;
+    private Ticket ticket;
 
 
     public TicketManager(TicketRepository repository) {
         this.repository = repository;
-
     }
 
+    public static int getLength(String ticket) {
+        if (ticket == null) throw new IllegalArgumentException("The argument cannot be null");
+        int length = ticket.length();
+        return length;
+    }
 
     public void add(Ticket ticket) {
         repository.add(ticket);
@@ -34,17 +39,18 @@ public class TicketManager {
             }
         }
         Arrays.sort(result);
-
         return result;
+
     }
 
+
     private boolean matches(Ticket ticket, String from, String to) {
-        if (ticket.getFrom().equals(from)) {
-            if (ticket.getTo().equals(to)) {
+        if (from.equals(ticket.getFrom())) {
+            if (to.equals(ticket.getTo())) {
                 return true;
             }
         }
         return false;
     }
-
 }
+
