@@ -30,4 +30,52 @@ public class TicketManagerTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
+
+    @Test
+    public void testTwoSortTickets() {
+
+        TicketRepository repo;
+        repo = new TicketRepository();
+        TicketManager manager;
+        TicketRepository repository = new TicketRepository();
+        manager = new TicketManager(repo);
+        Ticket ticket1 = new Ticket(1, "MSK", "SPB", 200, 95);
+        Ticket ticket2 = new Ticket(2, "MSK", "SPB", 100, 99);
+        Ticket ticket3 = new Ticket(3, "MSK", "LA", 500, 300);
+        Ticket ticket4 = new Ticket(4, "MSK", "UFA", 250, 95);
+        Ticket ticket5 = new Ticket(5, "MSK", "SPB", 250, 130);
+        Ticket ticket6 = new Ticket(6, "NEW", "SPB", 600, 95);
+        Ticket ticket7 = new Ticket(7, "MSK", "SPB", 150, 97);
+        for (Ticket ticket : Arrays.asList(ticket1, ticket2, ticket3, ticket4, ticket5, ticket6, ticket7)) {
+            manager.add(ticket);
+        }
+
+        Ticket[] expected = {};
+        Ticket[] actual = manager.findAll("NEW", "MSK");
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void testThreeSortTickets() {
+
+        TicketRepository repo;
+        repo = new TicketRepository();
+        TicketManager manager;
+        TicketRepository repository = new TicketRepository();
+        manager = new TicketManager(repo);
+        Ticket ticket1 = new Ticket(1, "MSK", "SPB", 200, 95);
+        Ticket ticket2 = new Ticket(2, "MSK", "SPB", 100, 99);
+        Ticket ticket3 = new Ticket(3, "MSK", "LA", 500, 300);
+        Ticket ticket4 = new Ticket(4, "MSK", "UFA", 250, 95);
+        Ticket ticket5 = new Ticket(5, "MSK", "SPB", 250, 130);
+        Ticket ticket6 = new Ticket(6, "NEW", "SPB", 600, 95);
+        Ticket ticket7 = new Ticket(7, "MSK", "SPB", 150, 97);
+        for (Ticket ticket : Arrays.asList(ticket1, ticket2, ticket3, ticket4, ticket5, ticket6, ticket7)) {
+            manager.add(ticket);
+        }
+
+        Ticket[] expected = {ticket6};
+        Ticket[] actual = manager.findAll("NEW", "SPB");
+        Assertions.assertArrayEquals(expected, actual);
+    }
 }

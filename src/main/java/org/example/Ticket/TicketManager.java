@@ -2,7 +2,7 @@ package org.example.Ticket;
 
 
 import java.util.Arrays;
-import java.util.regex.Pattern;
+
 
 public class TicketManager {
 
@@ -15,11 +15,6 @@ public class TicketManager {
         this.repository = repository;
     }
 
-    public static int getLength(String ticket) {
-        if (ticket == null) throw new IllegalArgumentException("The argument cannot be null");
-        int length = ticket.length();
-        return length;
-    }
 
     public void add(Ticket ticket) {
         repository.add(ticket);
